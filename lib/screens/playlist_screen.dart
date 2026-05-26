@@ -13,7 +13,10 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
   @override
   void initState() {
     super.initState();
-    Future.microtask(() => context.read<VlcProvider>().refreshPlaylist());
+    Future.microtask(() {
+      if (!mounted) return;
+      context.read<VlcProvider>().refreshPlaylist();
+    });
   }
 
   @override
@@ -35,8 +38,9 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
                 selected: item.isCurrent,
                 trailing: item.isCurrent ? const Icon(Icons.play_arrow) : null,
                 onTap: () {
+                  final navigator = Navigator.of(context);
                   vlc.playItem(item.id);
-                  Navigator.pop(context);
+                  navigator.pop();
                 },
               );
             },
