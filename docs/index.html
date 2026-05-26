@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC Remote - Simple Open Source Control</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        :root {
+            --primary: #f57c00;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 1rem;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li><strong>VLC Remote</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="https://github.com/jay-lenti/free-vlc-remote-app" class="secondary">GitHub</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="hero">
+            <img src="assets/icon.png" alt="VLC Remote Icon" class="app-icon">
+            <h1>VLC Remote</h1>
+            <p>A simple, lightweight app to remotely control VLC media player on your local network.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="grid">
+                <div>
+                    <h3>Playback Control</h3>
+                    <p>Play, pause, stop, next, and previous track with ease.</p>
+                </div>
+                <div>
+                    <h3>Volume & Seeking</h3>
+                    <p>Adjust volume up to 200% and jump to any part of the track.</p>
+                </div>
+                <div>
+                    <h3>Playlist Management</h3>
+                    <p>View your current playlist and switch tracks instantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Support</h2>
+            <p>Need help or found a bug? Please visit our GitHub Issues page to report problems or request new features.</p>
+            <a href="https://github.com/jay-lenti/free-vlc-remote-app/issues" role="button">Open Support Issues</a>
+        </section>
+    </main>
+    <footer class="container">
+        <hr>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p style="text-align: center; margin-top: 1rem;">
+            <small>VLC Remote is an open-source project. MIT Licensed.</small>
+        </p>
+    </footer>
+</body>
+</html>
