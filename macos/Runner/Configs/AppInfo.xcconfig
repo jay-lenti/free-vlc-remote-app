@@ -11,4 +11,4 @@ PRODUCT_NAME = vlc_remote
 PRODUCT_BUNDLE_IDENTIFIER = com.jaylenti.vlcremote
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2026 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2026 com.jaylenti. All rights reserved.
