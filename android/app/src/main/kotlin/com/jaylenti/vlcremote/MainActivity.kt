@@ -1,4 +1,4 @@
-package com.example.vlc_remote
+package com.jaylenti.vlcremote
 
 import io.flutter.embedding.android.FlutterActivity
 
